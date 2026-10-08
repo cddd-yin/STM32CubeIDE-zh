@@ -1,0 +1,164 @@
+en	zh
+Dormant	休眠
+Ready	就绪
+Running	运行中
+Suspended	已挂起
+Waiting	等待中
+Waiting-Suspended	等待-挂起
+Debugger Update Job	调试器更新任务
+Blocking	阻塞中
+Illegal number format	数字格式非法
+Id	ID
+Status	状态
+Disable	禁用
+Enable	启用
+Group current value	组当前值
+Event Flag group name	事件标志组名称
+Threads suspended on this event flag group	挂起在该事件标志组上的线程
+FIFO	FIFO
+Idle	空闲
+Memory block pool address	内存块池地址
+Block size (bytes)	块大小（字节）
+Number of free blocks	空闲块数
+Memory block pool name	内存块池名称
+Total pool size (bytes)	池总大小（字节）
+Threads suspended on this memory block pool	挂起在该内存块池上的线程
+Total number of blocks	块总数
+Number of allocated blocks	已分配块数
+Memory byte pool address	内存字节池地址
+Number of fragments	碎片数
+Number of free bytes	空闲字节数
+Memory byte pool name	内存字节池名称
+Total number of bytes in the pool	池中字节总数
+Threads suspended on this memory byte pool	挂起在该内存字节池上的线程
+Number of allocated bytes	已分配字节数
+Mutex owner count	互斥量持有计数
+Mutex name	互斥量名称
+The currently owning thread	当前持有线程
+Threads suspended on this mutex	挂起在该互斥量上的线程
+No	否
+<none>	<无>
+Pend	挂起等待
+Priority	优先级
+Queue address	队列地址
+Maximum number of entries	最大条目数
+Message size	消息大小
+Number of free entris	空闲条目数
+Queue name	队列名称
+Threads suspended on this queue	挂起在该队列上的线程
+Number of used entries	已用条目数
+receive	接收
+Semaphore count	信号量计数
+Semaphore name	信号量名称
+Threads suspended on this semaphore	挂起在该信号量上的线程
+send	发送
+Thread name	线程名称
+Thread priority	线程优先级
+Thread run counter	线程运行计数
+Currently running thread	当前运行的线程
+Thread stack end address	线程栈结束地址
+Thread stack pointer	线程栈指针
+Thread stack size (bytes)	线程栈大小（字节）
+Thread stack start address	线程栈起始地址
+Maximum number of used stack (bytes)	已用栈的最大值（字节）
+Thread suspended on memory block pool. Block pool name in parenthesis.	线程挂起于内存块池，块池名称见括号内。
+Thread suspended on memory byte pool. Byte pool name in parenthesis.	线程挂起于内存字节池，字节池名称见括号内。
+Thread completed processing and returned from entry function.	线程已处理完毕并从入口函数返回。
+Thread current state	线程当前状态
+Thread suspended on event flag. Event flag group name in parenthesis.	线程挂起于事件标志，事件标志组名称见括号内。
+Thread suspended on mutex. Mutex name in parenthesis.	线程挂起于互斥量，互斥量名称见括号内。
+Thread suspended on message queue. Queue name in parenthesis.	线程挂起于消息队列，队列名称见括号内。
+Thread currently executing	当前正在执行的线程
+Thread ready for execution	线程已就绪可执行
+Thread suspended on semaphore. Semaphore name in parenthesis.	线程挂起于信号量，信号量名称见括号内。
+Thread suspended on sleep call. Remaining ticks in parenthesis.	线程挂起于 sleep 调用，剩余节拍数见括号内。
+Thread terminated.	线程已终止。
+Timer function callback (address and name)	定时器回调函数（地址与名称）
+Timer name	定时器名称
+Timer re-initialize value (Ticks):\n0 = One shot timer\n>0 = Periodic timer	定时器重载值（节拍）：\n0 = 单次定时器\n>0 = 周期定时器
+Remaining ticks before timer expiration	定时器到期前的剩余节拍
+Yes	是
+STM32CubeIDE ThreadX Kernel Aware Debugging	STM32CubeIDE ThreadX 内核感知调试
+ThreadX Thread List	ThreadX 线程列表
+ThreadX Semaphores	ThreadX 信号量
+ThreadX Mutexes	ThreadX 互斥量
+ThreadX Message Queues	ThreadX 消息队列
+ThreadX Event Flags	ThreadX 事件标志
+ThreadX Timers	ThreadX 定时器
+ThreadX Memory Block Pools	ThreadX 内存块池
+ThreadX Memory Byte Pools	ThreadX 内存字节池
+Serial Wire Viewer	串行线查看器
+Trace buffer size	跟踪缓冲区大小
+Counter overflow	计数器溢出
+Data trace address offset	数据跟踪地址偏移
+R	读
+W	写
+Data PC value	数据 PC 值
+Bus fault	总线错误
+Debug monitor	调试监视器
+entry	进入
+Exception	异常
+exit	退出
+Hard fault	硬件错误
+MemManage fault	内存管理错误
+Reserved	保留
+Reset	复位
+return	返回
+SysTick	SysTick
+Usage fault	用法错误
+PC Sample	PC 采样
+No timestamp received for packet, cycles value guessed	未收到该数据包的时间戳，周期数为推测值
+Packet delayed	数据包延迟
+Timestamp delayed	时间戳延迟
+IRQ	IRQ
+Total for all	全部合计
+Extension	扩展
+Global timestamp bits	全局时间戳位
+Generated due to waiting for sync packet	因等待同步包而生成
+Overflow	溢出
+ITM Port	ITM 端口
+Page	页
+Sync	同步
+comp	比较
+N/A	不适用
+Unknown	未知
+Erasing chip ...	正在擦除芯片 ...
+Programming chip ...	正在烧录芯片 ...
+Programming project %s on chip	正在将工程 %s 烧录到芯片
+INDEX	INDEX
+USB_KEY	USB_KEY
+Cannot load board cmsis definition	无法加载板卡 CMSIS 定义
+Board cmsis definition not found	未找到板卡 CMSIS 定义
+Cannot parse board cmsis definition	无法解析板卡 CMSIS 定义
+Cmsis definition format is not correct	CMSIS 定义格式不正确
+Cmsis definition is invalid	CMSIS 定义无效
+Loading board cmsis error	加载板卡 CMSIS 出错
+Debugging C/C++ Programs on MCU	在 MCU 上调试 C/C++ 程序
+Debugging C/C++ on MCU	在 MCU 上调试 C/C++
+STM32 OpenOCD Debugging	STM32 OpenOCD 调试
+Automatically start JTAG hardware debugging on a remote system under control of GDB debugger and OpenOCD	在 GDB 调试器与 OpenOCD 的控制下，自动在远程系统上启动 JTAG 硬件调试
+STM32 MCU GDB Hardware Debugging	STM32 MCU GDB 硬件调试
+Debug with the STM32 Debugging launcher	使用 STM32 调试启动器进行调试
+STM32 OpenOCD Application	STM32 OpenOCD 应用
+Common	常规
+Debugger	调试器
+Main	主要
+Source	源
+Startup	启动
+STM32 MCU GDB Hardware Debugger	STM32 MCU GDB 硬件调试器
+hide menu item	隐藏菜单项
+I/O Registers	I/O 寄存器
+Exception on divide by zero	除零异常
+Exception on unaligned access	非对齐访问异常
+Halt on exception	遇异常时暂停
+Start Address	起始地址
+Vector table address not specified	未指定向量表地址
+Default start address	默认起始地址
+Set program counter (hex):	设置程序计数器（十六进制）：
+Specify vector table (hex):	指定向量表（十六进制）：
+Load Mode	加载模式
+thru Linux core (Production mode)	经由 Linux 内核（生产模式）
+thru JTAG/SWD link (Engineering mode)	经由 JTAG/SWD 链路（工程模式）
+Debugging C/C++ Programs on MPU - Cortex-M	在 MPU - Cortex-M 上调试 C/C++ 程序
+Debugging C/C++ on MPU - Cortex-M	在 MPU - Cortex-M 上调试 C/C++
+Debug	调试

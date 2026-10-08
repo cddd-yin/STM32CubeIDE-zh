@@ -1,0 +1,269 @@
+en	zh
+Create new Ac6 MCU project ...	正在新建 Ac6 MCU 工程 ...
+Setting up project toolchain ...	正在设置工程工具链 ...
+Add the target symbols ...	正在添加目标符号 ...
+EXEC	可执行文件
+Executable	可执行文件
+LIB	静态库
+Static Library	静态库
+Reference configuration setup is not expected one	参考配置的设置与预期不符
+Command path is empty	命令路径为空
+Exclude resource is invalid	排除的资源无效
+Project is not CDT compliant one	工程不是 CDT 兼容工程
+'%s' project artifact type is not supported	不支持工程 '%s' 的产物类型
+Board is null	板卡为空
+Build info is null	构建信息为空
+Command path is null	命令路径为空
+Build configuration is null	构建配置为空
+Core is null	内核为空
+Defaults are undefined	默认值未定义
+Exclude path collection is null	排除路径集合为空
+Exclude resource is null	排除资源为空
+Include path collection is null	包含路径集合为空
+Internal Toolchain ID is null or empty	内部工具链 ID 为空
+Linked additional object file(s) path collection is null	链接的额外目标文件路径集合为空
+Linked library(ies) path collection is null	链接的库路径集合为空
+Link Script is null	链接脚本为空
+Mcu is null	MCU 为空
+Prefix is null	前缀为空
+Secure library path is null	安全库路径为空
+Source entries folder is null	源文件条目文件夹为空
+Symbol collection is null	符号集合为空
+Target is null	目标为空
+Build artefact type is not supported	不支持构建产物类型
+Cannot set the toolchain default options	无法设置工具链默认选项
+Auto-set toolchain value error	自动设置工具链取值出错
+MCU ARM GCC Built-in Compiler Settings	MCU ARM GCC 内置编译器设置
+Target	目标
+Insert files into archive with replacement (-r)	以替换方式将文件插入归档 (-r)
+Generate debugging information (-g)	生成调试信息 (-g)
+Always preprocess assembler (-x assembler-with-cpp)	始终预处理汇编文件 (-x assembler-with-cpp)
+Suppress warnings (-Wa,-W)	抑制警告 (-Wa,-W)
+Board	板卡
+Core	内核
+Cpu clock frequence	CPU 时钟频率
+CPU	CPU
+Defaults	默认值
+Define symbols (-D)	定义符号 (-D)
+Floating-point ABI	浮点 ABI
+Floating-point unit	浮点单元
+Hardware implementation (-mfloat-abi=hard)	硬件实现 (-mfloat-abi=hard)
+Software implementation (-mfloat-abi=soft)	软件实现 (-mfloat-abi=soft)
+Mix HW/SW implementation (-mfloat-abi=softfp)	软硬件混合实现 (-mfloat-abi=softfp)
+Place data in their own sections (-fdata-sections)	将数据放入各自独立的段 (-fdata-sections)
+Place functions in their own sections (-ffunction-sections)	将函数放入各自独立的段 (-ffunction-sections)
+Disable "strict aliasing" optimization (-fno-strict-aliasing)	禁用“严格别名”优化 (-fno-strict-aliasing)
+Enable stack usage analysis (-fstack-usage)	启用栈用量分析 (-fstack-usage)
+Language standard	语言标准
+GCC default	GCC 默认
+GNU11 (ISO C11 + gnu extensions) (-std=gnu11)	GNU11（ISO C11 + GNU 扩展）(-std=gnu11)
+GNU90 (ISO C90 + gnu extensions) (-std=gnu90)	GNU90（ISO C90 + GNU 扩展）(-std=gnu90)
+GNU99 (ISO C99 + gnu extensions) (-std=gnu99)	GNU99（ISO C99 + GNU 扩展）(-std=gnu99)
+GNU17 (ISO C17 + gnu extensions) (-std=gnu17)	GNU17（ISO C17 + GNU 扩展）(-std=gnu17)
+GNU18 (ISO C18 + gnu extensions) (-std=gnu18)	GNU18（ISO C18 + GNU 扩展）(-std=gnu18)
+GNU++11 (ISO C++11 + gnu extensions) (-std=gnu++11)	GNU++11（ISO C++11 + GNU 扩展）(-std=gnu++11)
+GNU++14 (ISO C++14 + gnu extensions) (-std=gnu++14)	GNU++14（ISO C++14 + GNU 扩展）(-std=gnu++14)
+GNU++17 (ISO C++17 + gnu extensions) (-std=gnu++17)	GNU++17（ISO C++17 + GNU 扩展）(-std=gnu++17)
+GNU++20 (ISO C++20 + gnu extensions) (-std=gnu++20)	GNU++20（ISO C++20 + GNU 扩展）(-std=gnu++20)
+GNU++98 (ISO C++98 + gnu extensions) (-std=gnu++98)	GNU++98（ISO C++98 + GNU 扩展）(-std=gnu++98)
+ISO 9899:199409 (-std=iso9899:199409)	ISO 9899:199409 (-std=iso9899:199409)
+ISO C11 (-std=c11)	ISO C11 (-std=c11)
+ISO C17 (-std=c17)	ISO C17 (-std=c17)
+ISO C18 (-std=c18)	ISO C18 (-std=c18)
+ISO C90 / ANSI C89 (-std=c90)	ISO C90 / ANSI C89 (-std=c90)
+ISO C99 (-std=c99)	ISO C99 (-std=c99)
+ISO C++11 (-std=c++11)	ISO C++11 (-std=c++11)
+ISO C++14 (-std=c++14)	ISO C++14 (-std=c++14)
+ISO C++17 (-std=c++17)	ISO C++17 (-std=c++17)
+ISO C++20 (-std=c++20)	ISO C++20 (-std=c++20)
+ISO C++98 (-std=c++98)	ISO C++98 (-std=c++98)
+Compile and assemble, but do not link (-c)	编译并汇编，但不链接 (-c)
+Secure mode (-mcmse)	安全模式 (-mcmse)
+Assume loading data from flash is slower than fetching instruction (-mslow-flash-data)	假定从 Flash 加载数据慢于取指令 (-mslow-flash-data)
+Debug level	调试级别
+Default (-g)	默认 (-g)
+None	无
+Minimal (-g1)	最小 (-g1)
+Maximum (-g3)	最大 (-g3)
+Add symbol cross reference table to map file (-Wl,--cref)	向映射文件添加符号交叉引用表 (-Wl,--cref)
+Discard unused sections (-Wl,--gc-sections)	丢弃未使用的段 (-Wl,--gc-sections)
+Generate secure gateways (-Wl,--cmse-implib -Wl,--out-implib=)	生成安全网关 (-Wl,--cmse-implib -Wl,--out-implib=)
+Use C math library (-Wl,--start-group -lc -lm -Wl,--end-group)	使用 C 数学库 (-Wl,--start-group -lc -lm -Wl,--end-group)
+Use C math library (-Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group)	使用 C 数学库 (-Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group)
+Additional object files	额外的目标文件
+Library search path (-L)	库搜索路径 (-L)
+Libraries (-l)	库 (-l)
+Generate map file (-Wl,-Map=)	生成映射文件 (-Wl,-Map=)
+Do not use default libraries (-nodefaultlibs)	不使用默认库 (-nodefaultlibs)
+Do not use standard start files (-nostartfiles)	不使用标准启动文件 (-nostartfiles)
+No startup or default libs (-nostdlib)	不使用启动文件或默认库 (-nostdlib)
+Omit all symbol information (-s)	省略所有符号信息 (-s)
+Linker Script (-T)	链接脚本 (-T)
+No shared libraries (-static)	不使用共享库 (-static)
+System calls	系统调用
+Minimal implementation (--specs=nosys.specs)	最小实现 (--specs=nosys.specs)
+Do not use system calls from library	不使用库提供的系统调用
+Verbose (-Wl,--verbose)	详细输出 (-Wl,--verbose)
+Verbose (-v)	详细输出 (-v)
+Position Independent Code (-fPIC)	位置无关代码 (-fPIC)
+Disable handling exceptions (-fno-exceptions)	禁用异常处理 (-fno-exceptions)
+Disable generation of information about every class with virtual functions (-fno-rtti)	禁用为含虚函数的类生成类型信息 (-fno-rtti)
+Disable thread-safe initialization of local static objects (-fno-threadsafe-statics)	禁用局部静态对象的线程安全初始化 (-fno-threadsafe-statics)
+Do not use __cxa_atexit for registering static destructors (-fno-cxa-atexit)	不使用 __cxa_atexit 注册静态析构函数 (-fno-cxa-atexit)
+Include files (-include)	包含文件 (-include)
+Include paths (-I)	包含路径 (-I)
+Instruction set	指令集
+Mcu	MCU
+Use float with printf from newlib-nano (-u _printf_float)	newlib-nano 中 printf 支持浮点 (-u _printf_float)
+Use float with scanf from newlib-nano (-u _scanf_float)	newlib-nano 中 scanf 支持浮点 (-u _scanf_float)
+Do not search system directories (-nostdinc)	不搜索系统目录 (-nostdinc)
+Convert to binary file (-O binary)	转换为二进制文件 (-O binary)
+Convert to Intel Hex file (-O ihex)	转换为 Intel Hex 文件 (-O ihex)
+Convert to Motorola S-record file (-O srec)	转换为 Motorola S-record 文件 (-O srec)
+Convert to Motorola S-record (symbols) file (-O symbolsrec)	转换为 Motorola S-record（含符号）文件 (-O symbolsrec)
+Convert to Verilog file (-O verilog)	转换为 Verilog 文件 (-O verilog)
+Generate list file	生成列表文件
+Optimization level	优化级别
+None (-O0)	无 (-O0)
+Optimize (-O1)	优化 (-O1)
+Optimize more (-O2)	进一步优化 (-O2)
+Optimize most (-O3)	最大程度优化 (-O3)
+Optimize for speed (-Ofast)	速度优先优化 (-Ofast)
+Optimize for Debug (-Og)	调试优先优化 (-Og)
+Optimize for size (-Os)	体积优先优化 (-Os)
+Other flags	其他选项
+Path	路径
+Prefix	前缀
+Preprocess only (-E)	仅预处理 (-E)
+Runtime library	运行时库
+Newlib nano (--specs=nano.specs)	Newlib nano (--specs=nano.specs)
+Newlib standard	Newlib 标准
+Reduced C (--specs=nano.specs)	精简 C (--specs=nano.specs)
+Reduced C, reduced C++ (--specs=nano.specs)	精简 C、精简 C++ (--specs=nano.specs)
+Reduced C, standard C++ (--specs=nano_c_standard_cpp.specs)	精简 C、标准 C++ (--specs=nano_c_standard_cpp.specs)
+Standard C	标准 C
+Standard C, reduced C++ (--specs=standard_c_nano_cpp.specs)	标准 C、精简 C++ (--specs=standard_c_nano_cpp.specs)
+Standard C, standard C++	标准 C、标准 C++
+Show size information about built artifact	显示构建产物的体积信息
+Undefine symbols (-U)	取消定义符号 (-U)
+Enable all warnings about questionable constructions (-Wall)	启用所有可疑写法的警告 (-Wall)
+Warn for implicit conversions (-Wconversion)	对隐式类型转换告警 (-Wconversion)
+Enable extra warning flags (-Wextra)	启用额外警告选项 (-Wextra)
+Abort compilation on first error (-Wfatal-errors)	遇到第一个错误即中止编译 (-Wfatal-errors)
+Warn if a user-supplied include directory does not exist (-Wmissing-include-dirs)	用户指定的包含目录不存在时告警 (-Wmissing-include-dirs)
+Issue all warnings demanded by strict ISO C and ISO C++ (-pedantic)	发出严格 ISO C/C++ 所要求的全部警告 (-pedantic)
+Generate error instead of warnings from strict ISO C and ISO C++ (-pedantic-errors)	将严格 ISO C/C++ 的告警转为错误 (-pedantic-errors)
+Treat warnings as errors (-Werror)	将警告视为错误 (-Werror)
+Warn when a switch statement does not have a default case (-Wswitch-default)	switch 语句缺少 default 分支时告警 (-Wswitch-default)
+Warn if switch is used on an enum type and the switch statement lacks case for some enumerations (-Wswitch-enum)	对枚举类型使用 switch 且缺少部分枚举分支时告警 (-Wswitch-enum)
+Cyclomatic Complexity (-fcyclomatic-complexity)	圈复杂度 (-fcyclomatic-complexity)
+Place libraries in a linker group (-Wl,--start-group $(LIBS) -Wl,--end-group)	将库置于链接器组中 (-Wl,--start-group $(LIBS) -Wl,--end-group)
+Optimize more for size (-Oz)	更偏向体积优化 (-Oz)
+Debugging	调试
+General	常规
+Include paths	包含路径
+Libraries	库
+Miscellaneous	杂项
+Optimization	优化
+MCU Post build outputs	MCU 构建后输出
+MCU/MPU Post build outputs	MCU/MPU 构建后输出
+Preprocessor	预处理器
+MCU Settings	MCU 设置
+MCU/MPU Settings	MCU/MPU 设置
+MCU/MPU Toolchain	MCU/MPU 工具链
+Warnings	警告
+Build	构建
+File Association	文件关联
+Firmware Installation	固件安装
+MCU Firmware Project	MCU 固件工程
+MCU Project	MCU 工程
+Multi Core MCU Project	多核 MCU 工程
+Single Core MCU Project	单核 MCU 工程
+MCU GCC Archiver	MCU GCC 归档器
+MCU GCC Assembler	MCU GCC 汇编器
+MCU GCC Compiler	MCU GCC 编译器
+MCU GCC Abstract compiler/assembler tool	MCU GCC 抽象编译器/汇编器工具
+MCU GCC Linker	MCU GCC 链接器
+MCU GCC Abstract linker tool	MCU GCC 抽象链接器工具
+MCU GCC Abstract output converter	MCU GCC 抽象输出转换器
+MCU Output Converter Binary	MCU 输出转换器 Binary
+MCU Output Converter Hex	MCU 输出转换器 Hex
+MCU Output Converter Motorola S-rec	MCU 输出转换器 Motorola S-rec
+MCU Output Converter Motorola S-rec with symbols	MCU 输出转换器 Motorola S-rec（含符号）
+MCU Output Converter Verilog	MCU 输出转换器 Verilog
+MCU Output Converter list file	MCU 输出转换器列表文件
+MCU Size	MCU 体积
+MCU G++ Compiler	MCU G++ 编译器
+MCU G++ Linker	MCU G++ 链接器
+MCU ARM GCC	MCU ARM GCC
+MCU/MPU GCC Archiver	MCU/MPU GCC 归档器
+MCU/MPU GCC Assembler	MCU/MPU GCC 汇编器
+MCU/MPU GCC Compiler	MCU/MPU GCC 编译器
+MCU/MPU GCC Linker	MCU/MPU GCC 链接器
+MCU/MPU G++ Compiler	MCU/MPU G++ 编译器
+MCU/MPU G++ Linker	MCU/MPU G++ 链接器
+Trustzone	TrustZone
+Disabled	已禁用
+Non-secure	非安全
+Secure	安全
+MPU_Options	MPU 选项
+Project''s ''{0}'' build context check	工程 ''{0}'' 构建上下文检查
+''{0}'' is requiring code generation.\nClick OK to build without invoking Device Configuration Tool code regeneration.	''{0}'' 需要重新生成代码。\n点击“确定”直接构建，不调用设备配置工具重新生成代码。
+Reference configuration setup is not the expected one	参考配置的设置与预期不符
+Cpu clock is null	CPU 时钟为空
+(-fshort-enums)	(-fshort-enums)
+(-mstrict-align)	(-mstrict-align)
+(-mtune=cortex-a35)	(-mtune=cortex-a35)
+Crypto-Neon-FP-ARMv8	Crypto-Neon-FP-ARMv8
+FP-ARMv8	FP-ARMv8
+FPv4-SP-D16	FPv4-SP-D16
+FPv5-D16	FPv5-D16
+FPv5-SP-D16	FPv5-SP-D16
+Neon	Neon
+Neon-FP16	Neon-FP16
+Neon-FP-ARMv8	Neon-FP-ARMv8
+Neon-VFPv4	Neon-VFPv4
+VFP	VFP
+VFPv3	VFPv3
+VFPv3-D16-FP16	VFPv3-D16-FP16
+VFPv3-FP16	VFPv3-FP16
+VFPv3xd	VFPv3xd
+VFPv3xd-FP16	VFPv3xd-FP16
+VFPv4	VFPv4
+VFPv4-D16	VFPv4-D16
+ARM	ARM
+Thumb2	Thumb2
+The following build configurations do not have valid Toolchain settings:	以下构建配置的工具链设置无效：
+\tProject={0}\t\tConfiguration={1}	\t工程={0}\t\t配置={1}
+Open Toolchain Manager...	打开工具链管理器...
+Default	默认
+The Toolchain Manager allows users to configure the workspace toolchain, and manage installed toolchains.	工具链管理器用于配置工作区工具链并管理已安装的工具链。
+Fetching toolchain list...	正在获取工具链列表...
+Install...	安装...
+Install missing toolchain(s)	安装缺失的工具链
+Failed to fetch the toochain list, please check your network settings.	获取工具链列表失败，请检查网络设置。
+Network error...	网络错误...
+By default let STM32CubeIDE select the toolchain to use.	默认由 STM32CubeIDE 自动选择要使用的工具链。
+Note: installing and uninstalling toolchains requires a restart of STM32CubeIDE.	注意：安装或卸载工具链后需要重启 STM32CubeIDE。
+Toolchain Manager	工具链管理器
+Reload	重新加载
+Reload the toolchains list from the repository	从仓库重新加载工具链列表
+Set Default	设为默认
+Configure the workspace toolchain, and manage installed toolchains.	配置工作区工具链并管理已安装的工具链。
+Not installed	未安装
+State	状态
+Installed	已安装
+Uninstall...	卸载...
+Use workspace setting ({0})	使用工作区设置（{0}）
+Reason	原因
+Toolchain	工具链
+Please fix required invalid build configurations	请修正必须处理的无效构建配置
+Edit invalid project settings...	编辑无效的工程设置...
+Some build configuration are still invalid	仍有部分构建配置无效
+Not able to compute build settings defaults.\nKind advice is to cancel current form.	无法计算构建设置的默认值。\n建议取消当前窗口。
+Fail to restore defaults	恢复默认值失败
+Current project restore defaults feature in unsupported (legacy project ?).	当前工程不支持恢复默认值功能（是否为旧版工程？）。
+Abort	中止
+Linker options are automatically migrated from the C Linker to the C++ Linker.\n\nThe user must manage the compiler option migration manually, since 1-to-1 translation cannot be guaranteed between C and C++.	链接器选项已自动从 C 链接器迁移到 C++ 链接器。\n\n编译器选项需由用户手动迁移，因为 C 与 C++ 之间无法保证一一对应。
+Continue	继续
+C/C++ conversion confirmation...	C/C++ 转换确认...

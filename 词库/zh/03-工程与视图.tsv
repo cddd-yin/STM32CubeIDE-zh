@@ -1,0 +1,277 @@
+en	zh
+Select STM32 board device	选择 STM32 板卡器件
+STM32 board device selection is required	必须选择 STM32 板卡器件
+STM32 Project from Board Device	从板卡器件新建 STM32 工程
+Fail to perform local copy	执行本地复制失败
+Fail to get required STM32Cube firmware package	获取所需的 STM32Cube 固件包失败
+Fail on internal error	因内部错误而失败
+Fail to get local example copy	获取本地示例副本失败
+Fail to get required STM32Cube software package	获取所需的 STM32Cube 软件包失败
+Example Copy to Local Repository	将示例复制到本地仓库
+Example Project Import	示例工程导入
+Example Copy Setup	示例复制设置
+Example Copy	示例复制
+Example Import	示例导入
+Promoted example destination folder already exist	提升示例的目标文件夹已存在
+Selected example is still in development and may not be fully functional	所选示例仍在开发中，功能可能不完整
+Selected example is not supported currently by this IDE	当前 IDE 不支持所选示例
+Select STM32Cube example	选择 STM32Cube 示例
+Example selection is required	必须选择示例
+Selected STM32Cube example reference IDE is not supported	不支持所选 STM32Cube 示例的参考 IDE
+Selected STM32Cube example target device is not supported	不支持所选 STM32Cube 示例的目标器件
+STM32 Project from STM32Cube Examples	从 STM32Cube 示例新建 STM32 工程
+STM32 Project From Existing STM32CubeMX Configuration File (.ioc)	从现有 STM32CubeMX 配置文件 (.ioc) 新建 STM32 工程
+Select STM32 MCU / MPU device	选择 STM32 MCU / MPU 器件
+STM32 STM32 MCU / MPU device selection is required	必须选择 STM32 MCU / MPU 器件
+STM32 Project from MCU / MPU Device	从 MCU / MPU 器件新建 STM32 工程
+Code Generator Options	代码生成器选项
+Import Options	导入选项
+Target and Firmware Package	目标与固件包
+See <a>''{0}''</a> for settings related to package installation	与软件包安装相关的设置请参见 <a>''{0}''</a>
+Firmware Package Name and Version:	固件包名称与版本：
+Firmware and Software Package Repository	固件与软件包仓库
+Location:	位置：
+Setup STM32 target's firmware	设置 STM32 目标固件
+Firmware Library Package Setup	固件库包设置
+Software Package Name and Version:	软件包名称与版本：
+Target Reference:	目标参考：
+Browse...	浏览...
+Browse for existing STM32CubeMX configuration file (.ioc)	浏览现有的 STM32CubeMX 配置文件 (.ioc)
+Select the location directory.	选择位置目录。
+Browse For Folder	浏览文件夹
+Use default location	使用默认位置
+Only one contributor is accepted to project setup firmware's options group. Please double check your core logic !	工程设置的“固件”选项组只允许一个贡献者，请检查核心逻辑！
+Empty STM32CubeMX configuration file (.ioc) is not supported	不支持空的 STM32CubeMX 配置文件 (.ioc)
+STM32CubeMX configuration file (.ioc) location is invalid	STM32CubeMX 配置文件 (.ioc) 的位置无效
+STM32CubeMX configuration file (.ioc) target is invalid	STM32CubeMX 配置文件 (.ioc) 的目标无效
+File:	文件：
+STM32CubeMX configuration file (.ioc) target is not supported	不支持该 STM32CubeMX 配置文件 (.ioc) 的目标
+STM32CubeMX .ioc file	STM32CubeMX .ioc 文件
+Targeted Language	目标语言
+Enable Multi Cpus Configuration	启用多 CPU 配置
+Options	选项
+Setup STM32 project	设置 STM32 工程
+Project Setup	工程设置
+Project	工程
+Project Name:	工程名称：
+Only one contributor is accepted to project setup project's options group. Please double check your core logic !	工程设置的“工程”选项组只允许一个贡献者，请检查核心逻辑！
+Project Structure	工程结构
+Remove Conflicting Project From WorkSpace	从工作区移除冲突的工程
+Targeted Device Usage	目标器件用途
+Enable TrustZone	启用 TrustZone
+Wrong project selection	工程选择有误
+The referent project ''{0}'' needs to be selected for the project ''{1}''.\n Please, select the necessary projects and retry.	工程 ''{1}'' 需要同时选中其引用工程 ''{0}''。\n请选择必要的工程后重试。
+Example name \'%s\' is not supported. Based on board name \'%s\' and reference IDE \'%s\' and \'%s\' library type	不支持示例名 \'%s\'（依据板卡名 \'%s\'、参考 IDE \'%s\' 与 \'%s\' 库类型）
+Not able to retrieve target selector from provided object	无法从给定对象中获取目标选择器
+Target name \'%s\' is not supported	不支持目标名 \'%s\'
+Target \'%s\' selection done	目标 \'%s\' 选择完成
+Runtime target injection is ignored.\n\n\'%s\' target name is not supported !	已忽略运行时目标注入。\n\n不支持目标名 \'%s\'！
+Runtime Target Injection	运行时目标注入
+Select STM32 target or STM32Cube example	选择 STM32 目标或 STM32Cube 示例
+Target Selection	目标选择
+STM32 target or STM32Cube example selection is required	必须选择 STM32 目标或 STM32Cube 示例
+STM32 Project	STM32 工程
+Perform Project Creation. Please Wait For Completion ...	正在创建工程，请等待完成 ...
+Target \'%s\' is not supported currently by this IDE according "Preview" marketing status	按“预览”市场状态，当前 IDE 尚不支持目标 \'%s\'
+Target \'%s\' is not supported currently by this IDE	当前 IDE 尚不支持目标 \'%s\'
+STM32 Project from Board	从板卡新建 STM32 工程
+Create a New STM32 Project from Board Device	从板卡器件新建 STM32 工程
+Import STM32Cube Example	导入 STM32Cube 示例
+STM32 Project from STM32Cube Example	从 STM32Cube 示例新建 STM32 工程
+Create a new STM32 project from STM32Cube Example	从 STM32Cube 示例新建 STM32 工程
+Import an Existing STM32CubeMX Configuration File (.ioc)	导入现有 STM32CubeMX 配置文件 (.ioc)
+STM32 Project from an Existing STM32CubeMX Configuration File (.ioc)	从现有 STM32CubeMX 配置文件 (.ioc) 新建 STM32 工程
+Create a New STM32 Project from an Existing STM32CubeMX Configuration File (.ioc)	从现有 STM32CubeMX 配置文件 (.ioc) 新建 STM32 工程
+STM32 Project from MCU / MPU	从 MCU / MPU 新建 STM32 工程
+Create a New STM32 Project from MCU / MPU Device	从 MCU / MPU 器件新建 STM32 工程
+Create a New STM32 project	新建 STM32 工程
+Project nature is not valid	工程性质无效
+Fail to setup project relative links	设置工程相对链接失败
+'%s' project language is not supported	不支持工程语言 '%s'
+Project is null	工程为空
+Project location already exists	工程位置已存在
+Directory with specified name already exists	指定名称的目录已存在
+Project location is invalid	工程位置无效
+Project location is not a directory	工程位置不是目录
+Project location is not empty repository	工程位置不是空仓库
+Project location is read only	工程位置为只读
+Fail to check project location validity	检查工程位置有效性失败
+Empty project name is not supported	不支持空工程名
+Project is already existing within current workspace	当前工作区中已存在该工程
+Project location already exists (The underlying file system may be case insensitive)	工程位置已存在（底层文件系统可能不区分大小写）
+Project name is ending with some blank character	工程名以空白字符结尾
+Project name is including unsupported character	工程名包含不支持的字符
+Error: Fail linking \'%s\' to \'%s\' as part of project \'%s\' context	错误：在工程 \'%s\' 的上下文中将 \'%s\' 链接到 \'%s\' 失败
+Error: %s linking \'%s\' to \'%s\' as part of project \'%s\' context	错误：%s 链接 \'%s\' 到 \'%s\'（属工程 \'%s\' 上下文）
+Info: New attempt on error linking \'%s\' to \'%s\' as part of project \'%s\' context	信息：链接出错后重试 \'%s\' 到 \'%s\'（属工程 \'%s\' 上下文）
+Info: Success linking \'%s\' to \'%s\' as part of project \'%s\' context	信息：成功链接 \'%s\' 到 \'%s\'（属工程 \'%s\' 上下文）
+Unsupported target named : '%s'	不支持的目标名：'%s'
+Managed	受管
+NonManaged	非受管
+STM32CubeIDE Advanced Structure Project	STM32CubeIDE 高级结构工程
+STM32CubeIDE Cpu Project	STM32CubeIDE CPU 工程
+STM32Cube Example Project	STM32Cube 示例工程
+STM32Cube Imported Example Project	STM32Cube 导入的示例工程
+STM32Cube Project	STM32Cube 工程
+STM32CubeIDE Debug Device Less Project	STM32CubeIDE 无调试器件工程
+STM32CubeIDE End User Disabled Multi Cpu Usage	STM32CubeIDE 最终用户已禁用多 CPU 使用
+STM32CubeIDE End User Disabled Cortex M TrustZone	STM32CubeIDE 最终用户已禁用 Cortex-M TrustZone
+STM32CubeIDE Managed Makefile Project	STM32CubeIDE 受管 Makefile 工程
+STM32CubeIDE Project	STM32CubeIDE 工程
+STM32CubeIDE Multi Cortex M Cpu Project	STM32CubeIDE 多 Cortex-M CPU 工程
+STM32CubeIDE Non Managed Makefile Project	STM32CubeIDE 非受管 Makefile 工程
+STM32CubeIDE Non Secure Project	STM32CubeIDE 非安全工程
+STM32CubeIDE Non Under Root Project	STM32CubeIDE 非根目录下工程
+STM32CubeIDE Rich OS Capable Project	STM32CubeIDE 支持富操作系统工程
+STM32CubeIDE Root Project	STM32CubeIDE 根工程
+STM32CubeIDE Secure Project	STM32CubeIDE 安全工程
+STM32CubeIDE Single Cortex M Cpu Project	STM32CubeIDE 单 Cortex-M CPU 工程
+SW4STM32 Converted to STM32CubeIDE Project	由 SW4STM32 转换而来的 STM32CubeIDE 工程
+TrueSTUDIO Converted to STM32CubeIDE Project	由 TrueSTUDIO 转换而来的 STM32CubeIDE 工程
+Load address (LMA)	加载地址 (LMA)
+Name	名称
+Search	搜索
+Selection:	选择：
+Selection: ...	选择：...
+Size	大小
+The symbol {0} was not found in your workspace.	在工作区中未找到符号 {0}。
+Unable to find symbol	无法找到符号
+Run address (VMA)	运行地址 (VMA)
+End address	结束地址
+Free	空闲
+Region	区域
+Start address	起始地址
+Usage (%)	使用率 (%)
+Used	已用
+No device	无器件
+Open device configuration	打开器件配置
+Address	地址
+Device	器件
+Device configuration	器件配置
+New device name	新器件名称
+New region address	新区域地址
+New region name	新区域名称
+New region size	新区域大小
+New vendor name	新厂商名称
+Remove device	移除器件
+Remove memory region	移除内存区域
+Size (K)	大小 (K)
+Vendor	厂商
+Linker script:	链接脚本：
+Pin Build Analyzer	固定“构建分析器”
+Memory Details	内存详情
+Refresh Build Analyzer	刷新构建分析器
+Build Properties	构建属性
+Value	值
+Show Byte	按字节显示
+Show Hex	按十六进制显示
+Show Human	按易读格式显示
+Build Analyzer	构建分析器
+Case sensitive	区分大小写
+Local cost uncertain due to dynamic size, verify at runtime	因动态大小导致局部开销不确定，请在运行时核实
+Local cost uncertain due to inline assembler, verify at runtime	因内联汇编导致局部开销不确定，请在运行时核实
+Local cost uncertain due to inline assembler and dynamic size, verify at runtime	因内联汇编与动态大小导致局部开销不确定，请在运行时核实
+Max cost uncertain	最大开销不确定
+No stack usage information available for this function	该函数没有可用的栈用量信息
+Recursive	递归
+Search...	搜索...
+Call graph	调用图
+Depth	深度
+Pin Stack Analyzer	固定“栈分析器”
+Info	信息
+List	列表
+Local cost	局部开销
+Max cost	最大开销
+Elf had no line information, please enable debug information in the compiler settings. Some information will be missing.	ELF 文件不包含行号信息，请在编译器设置中启用调试信息，否则部分信息将缺失。
+No stack usage information found, please enable in the compiler settings	未找到栈用量信息，请在编译器设置中启用
+Analyzing elf file...	正在分析 ELF 文件...
+Constructing call graph...	正在构建调用图...
+Refresh Stack Analyzer	刷新栈分析器
+Type	类型
+No Cyclomatic Complexity information found, please enable in the compiler settings	未找到圈复杂度信息，请在编译器设置中启用
+Complexity	复杂度
+Function	函数
+Location	位置
+Hide dead code	隐藏死代码
+Pin Cyclomatic Complexity	固定“圈复杂度”
+This view is only available for ARM projects	该视图仅适用于 ARM 工程
+Analyzing sources...	正在分析源文件...
+progress Constructing Call Graph	正在构建调用图
+Presenting...	正在呈现...
+Refresh Cyclomatic Complexity	刷新圈复杂度
+Search by function name ...	按函数名搜索 ...
+Cyclomatic Complexity	圈复杂度
+Features Usage Statistics	功能使用统计
+STM32CubeIDE End User Agreements	STM32CubeIDE 最终用户协议
+End User Agreements	最终用户协议
+end user agreements	最终用户协议
+Data collection information notice	数据收集信息声明
+Terms of Use	使用条款
+Features Usage Statistics Agreement	功能使用统计协议
+Window > Preferences > STM32Cube >	窗口 > 首选项 > STM32Cube >
+Help STMicroelectronics improve its products.\n\nST int N.V (as data controller) collects and uses anonymous features usage statistics (directly or by ST affiliates) when you use the application for the purpose of continuously improving the application.\nYou can stop the collection of your features usage statistics when you use the application at any time with effect for the future or update your preferences via the menu	帮助 STMicroelectronics 改进产品。\n\n当您使用本应用时，ST int N.V（作为数据控制者）会直接或通过 ST 关联公司收集并使用匿名的功能使用统计信息，用途是持续改进本应用。\n您可随时停止收集功能使用统计信息（自停止时起对未来生效），也可通过菜单更新首选项
+For details please see our	详情请参阅我们的
+Common project's resources generation error	通用工程资源生成错误
+Common project's resources import failure: internal error	通用工程资源导入失败：内部错误
+Target is required	必须指定目标
+Resource file generation error	资源文件生成错误
+Create resource file failure: internal error	创建资源文件失败：内部错误
+Create resource file failure: fail to resolve script template	创建资源文件失败：无法解析脚本模板
+Creating resource file error	创建资源文件出错
+Create resource file failure: cannot copy script template	创建资源文件失败：无法复制脚本模板
+Create resource file failure: cannot read script template source	创建资源文件失败：无法读取脚本模板源
+Create resource file: cannot start template resolver engine	创建资源文件：无法启动模板解析引擎
+Create startup failure: cannot copy reference script	创建启动文件失败：无法复制参考脚本
+Create startup failure: cannot access reference file \'%s\'	创建启动文件失败：无法访问参考文件 \'%s\'
+Startup generation error	启动文件生成错误
+Create startup failure: internal error	创建启动文件失败：内部错误
+Create startup failure: fail to resolve script template	创建启动文件失败：无法解析脚本模板
+Creating startup error	创建启动文件出错
+Create startup failure: cannot copy script template	创建启动文件失败：无法复制脚本模板
+Create startup failure: cannot read script template source	创建启动文件失败：无法读取脚本模板源
+Create startup failure: cannot start template resolver engine	创建启动文件失败：无法启动模板解析引擎
+CMake Configure Builder	CMake 配置构建器
+CMake Settings	CMake 设置
+Creates a new STM32 CMake Project	新建 STM32 CMake 工程
+STM32 CMake Project	STM32 CMake 工程
+Create a STM32 CMake project using existing CMake sources	使用现有 CMake 源新建 STM32 CMake 工程
+CMake Configure	CMake 配置
+Initializing GNU ARM GCC Compiler...	正在初始化 GNU ARM GCC 编译器...
+Initializing OpenSDK...	正在初始化 OpenSDK...
+%s Installation Log	%s 安装日志
+Installing %s...	正在安装 %s...
+\n[Console will be closed in few seconds]	\n[控制台将在几秒后关闭]
+\n[ERROR] An error occurred during installation of '%s'	\n[错误] 安装 '%s' 时发生错误
+Fail create backup of project files before conversion.	转换前备份工程文件失败。
+The project {0} was converted without problems. Some manual configuration may still be required. Read the {0}_converter.log file available in the project root folder.	工程 {0} 已顺利转换，可能仍需少量手动配置。请查阅工程根目录下的 {0}_converter.log 文件。
+Project converter	工程转换器
+The conversion of project {0} could not be fully completed. The following areas need further attention:\n\n{1}\n\nPlease verify the build configuration settings.	工程 {0} 的转换未能完全完成，以下方面需要进一步处理：\n\n{1}\n\n请检查构建配置设置。
+This project requires a conversion in order to be used with STM32CubeIDE.\nProject-files are automatically backed-up (.project_org/.cproject_org) in project root folder before conversion.\n\nConvert project {0} to an STM32CubeIDE project?	该工程需先转换才能用于 STM32CubeIDE。\n转换前会自动将工程文件备份到工程根目录（.project_org/.cproject_org）。\n\n是否将工程 {0} 转换为 STM32CubeIDE 工程？
+Fail to get template \'%s\' resource	获取模板 \'%s\' 资源失败
+Fail to get project \'%s\' include(s) repository	获取工程 \'%s\' 的包含仓库失败
+Fail to import thread safe contribution to project \'%s\'	向工程 \'%s\' 导入线程安全贡献失败
+Fail to link thread safe contribution to project \'%s\'	向工程 \'%s\' 链接线程安全贡献失败
+Fail to get project \'%s\' root	获取工程 \'%s\' 根目录失败
+Complexity Ceiling	复杂度上限
+Cyclomatic Complexity View	圈复杂度视图
+See <a>''{0}''</a> for settings related to %s	与 %s 相关的设置请参见 <a>''{0}''</a>
+STM32Cube	STM32Cube
+STM32CubeIDE\n\nVersion: {0}\nBuild: {1}\n\n(C) 2025 STMicroelectronics ALL RIGHTS RESERVED\n	STM32CubeIDE\n\n版本：{0}\n构建：{1}\n\n(C) 2025 STMicroelectronics 保留所有权利\n
+ChangeLog:\n- \n- \n	变更日志：\n- \n- \n
+MPU Project	MPU 工程
+MPU Embedded MCU Project	MPU 嵌入式 MCU 工程
+This project requires OpenSTLinux version '%s', setup it now ?	该工程需要 OpenSTLinux 版本 '%s'，现在进行设置吗？
+OpenSTLinux setup	OpenSTLinux 设置
+Only a single IDE contribution is supported. Your STM32Cube tools installation is corrupted.	只支持单个 IDE 集成项，您的 STM32Cube 工具安装已损坏。
+Only a single contribution to '%s' is supported	只支持对 '%s' 的单个集成项
+CMSIS-SVD Settings	CMSIS-SVD 设置
+TCP Console View	TCP 控制台视图
+Target status wigdet custom options	目标状态小部件自定义选项
+MPU serial device preferences	MPU 串行设备首选项
+Serial port not available.	串行端口不可用。
+STM32CubeIDE Project Configurator	STM32CubeIDE 工程配置器
+STM32CubeIDE project	STM32CubeIDE 工程
+STM32CubeIDE Project Converter For System Workbench For STM32	面向 System Workbench for STM32 的 STM32CubeIDE 工程转换器
+Convert 'System Workbench for STM32' project to STM32CubeIDE project	将“System Workbench for STM32”工程转换为 STM32CubeIDE 工程
+STM32CubeIDE Project Converter For Atollic TrueSTUDIO	面向 Atollic TrueSTUDIO 的 STM32CubeIDE 工程转换器
+Convert 'Atollic TrueSTUDIO' project to STM32CubeIDE project	将“Atollic TrueSTUDIO”工程转换为 STM32CubeIDE 工程
