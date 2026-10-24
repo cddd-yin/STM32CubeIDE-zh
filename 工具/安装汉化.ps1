@@ -1,46 +1,95 @@
-﻿# 安装 STM32CubeIDE 汉化：把中文片段包与 Eclipse Babel 官方中文包装入 dropins，
+﻿#Requires -Version 5.1
+# 安装 STM32CubeIDE 汉化：把中文片段包与 Eclipse Babel 官方中文包装入 dropins，
 # 并注册进启动配置（bundles.info + -nl zh_CN），使桌面/开始菜单的普通启动即为中文。
-# 注意：本脚本会写入 STM32CubeIDE 安装目录（外部修改），运行前请确认已获授权。
+# 易用性：自动请求管理员权限（UAC）；自动探测安装目录（参数 → 注册表 → 运行中进程 → 常见路径），
+#         探测失败时可交互粘贴路径，无需命令行知识。
+[CmdletBinding()]
 param(
-    [string]$Root = 'C:\stm32ide\STM32CubeIDE_1.19.0\STM32CubeIDE'
+    [string]$Root = '',    # STM32CubeIDE 安装目录（留空自动探测）
+    [switch]$NoPause
 )
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-$proj    = Split-Path -Parent $PSScriptRoot
-$fragSrc = Join-Path $proj '成品\fragments'
-$babelSrc= Join-Path $proj '成品\babel'
-$ini     = Join-Path $Root 'stm32cubeide.ini'
-$exe     = Join-Path $Root 'stm32cubeide.exe'
-$dropins = Join-Path $Root 'dropins'
+# ---------- 1. 自动请求管理员权限（写安装目录需要） ----------
+$identity  = [Security.Principal.WindowsIdentity]::GetCurrent()
+$principal = New-Object Security.Principal.WindowsPrincipal($identity)
+if (-not $principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)) {
+    Write-Host '[i] 写入 STM32CubeIDE 安装目录需要管理员权限，正在弹出授权窗口……' -ForegroundColor Yellow
+    $psExe   = (Get-Process -Id $PID).Path
+    $argList = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', "`"$PSCommandPath`"")
+    if ($Root)    { $argList += @('-Root', "`"$Root`"") }
+    if ($NoPause) { $argList += '-NoPause' }
+    try {
+        $proc = Start-Process -FilePath $psExe -ArgumentList $argList -Verb RunAs -PassThru -Wait
+        exit $proc.ExitCode
+    }
+    catch {
+        Write-Host '[×] 未获得管理员权限（授权被取消）。' -ForegroundColor Red
+        Write-Host '    可右键「一键安装汉化.bat」→「以管理员身份运行」重试。' -ForegroundColor Yellow
+        if (-not $NoPause) { Read-Host '按回车键关闭窗口' | Out-Null }
+        exit 1
+    }
+}
+
+# ---------- 2. 定位源文件 ----------
+$proj     = Split-Path -Parent $PSScriptRoot
+$fragSrc  = Join-Path $proj '成品\fragments'
+$babelSrc = Join-Path $proj '成品\babel'
+
+if (-not (Test-Path -LiteralPath $fragSrc)) {
+    Write-Host "[×] 找不到汉化包：$fragSrc" -ForegroundColor Red
+    Write-Host '    请确认已完整解压整个压缩包，且没有单独移动「成品」文件夹。' -ForegroundColor Yellow
+    if (-not $NoPause) { Read-Host '按回车键关闭窗口' | Out-Null }
+    exit 1
+}
+
+# ---------- 3. 探测 STM32CubeIDE 安装目录（共享模块） ----------
+. (Join-Path $PSScriptRoot '探测安装目录.ps1')
+
+$dir = Resolve-IdEDir -Hint $Root
+if (-not $dir) {
+    Write-Host '[×] 未能定位 STM32CubeIDE 安装目录，安装中止。' -ForegroundColor Red
+    if (-not $NoPause) { Read-Host '按回车键关闭窗口' | Out-Null }
+    exit 1
+}
+
+$ini     = Join-Path $dir 'stm32cubeide.ini'
+$dropins = Join-Path $dir 'dropins'
 $zhDir   = Join-Path $dropins 'stm32cubeide-zh'
 $dstPlg  = Join-Path $zhDir 'plugins'
 $dstFea  = Join-Path $zhDir 'features'
-$bi      = Join-Path $Root 'configuration\org.eclipse.equinox.simpleconfigurator\bundles.info'
+$bi      = Join-Path $dir 'configuration\org.eclipse.equinox.simpleconfigurator\bundles.info'
 
-if (-not (Test-Path $exe))  { Write-Error "未找到 STM32CubeIDE：$exe"; exit 1 }
-if (-not (Test-Path $ini))  { Write-Error "未找到启动配置：$ini"; exit 1 }
-if (-not (Test-Path $bi))   { Write-Error "未找到包清单：$bi"; exit 1 }
+if (-not (Test-Path -LiteralPath $bi)) {
+    Write-Host "[×] 未找到包清单：$bi" -ForegroundColor Red
+    if (-not $NoPause) { Read-Host '按回车键关闭窗口' | Out-Null }
+    exit 1
+}
 
-# 0. 运行中检查
+# ---------- 4. 运行中检查 ----------
 $running = Get-Process -Name 'stm32cubeide' -ErrorAction SilentlyContinue
-if ($running) { Write-Warning "STM32CubeIDE 正在运行（PID $($running.Id -join ',')），请先关闭再安装。" ; exit 2 }
+if ($running) {
+    Write-Host "[×] STM32CubeIDE 正在运行，请先完全关闭再安装。" -ForegroundColor Red
+    if (-not $NoPause) { Read-Host '按回车键关闭窗口' | Out-Null }
+    exit 2
+}
 
-# 1. 备份启动配置与包清单（只备份一次，作为还原母本）
+# ---------- 5. 备份启动配置与包清单（只备份一次，作为还原母本） ----------
 $iniBak = "$ini.zhbak"
 $biBak  = "$bi.zhbak"
-if (-not (Test-Path $iniBak)) { Copy-Item $ini $iniBak -Force; Write-Output "已备份启动配置：$iniBak" }
-else { Write-Output "启动配置备份已存在：$iniBak" }
-if (-not (Test-Path $biBak)) { Copy-Item $bi $biBak -Force; Write-Output "已备份包清单：$biBak" }
-else { Write-Output "包清单备份已存在：$biBak" }
+if (-not (Test-Path $iniBak)) { Copy-Item -LiteralPath $ini $iniBak -Force; Write-Host "已备份启动配置：$iniBak" }
+else { Write-Host "启动配置备份已存在：$iniBak" }
+if (-not (Test-Path $biBak))  { Copy-Item -LiteralPath $bi $biBak -Force;  Write-Host "已备份包清单：$biBak" }
+else { Write-Host "包清单备份已存在：$biBak" }
 
-# 2. 建立 dropins 目录并复制自建片段包（留档；真正生效靠第 4 步注册）
+# ---------- 6. 建立 dropins 目录并复制自建片段包 ----------
 New-Item -ItemType Directory -Force -Path $dstPlg, $dstFea | Out-Null
 Get-ChildItem $fragSrc -Filter '*.jar' | ForEach-Object { Copy-Item $_.FullName $dstPlg -Force }
 $nFrag = (Get-ChildItem $fragSrc -Filter '*.jar' | Measure-Object).Count
-Write-Output "已安装自建中文片段包：$nFrag 个"
+Write-Host "已安装自建中文片段包：$nFrag 个"
 
-# 3. 解包 Eclipse Babel 官方中文包（eclipse/plugins|features -> dropins/...）
+# ---------- 7. 解包 Eclipse Babel 官方中文包（eclipse/plugins|features -> dropins/...） ----------
 $nBabel = 0
 foreach ($zipPath in (Get-ChildItem $babelSrc -Filter '*.zip' | Sort-Object Name)) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($zipPath.FullName)
@@ -56,11 +105,11 @@ foreach ($zipPath in (Get-ChildItem $babelSrc -Filter '*.zip' | Sort-Object Name
         }
     }
     $zip.Dispose()
-    Write-Output ("已解包 {0}：{1} 个条目" -f $zipPath.Name, $count)
+    Write-Host ("已解包 {0}：{1} 个条目" -f $zipPath.Name, $count)
     $nBabel += $count
 }
 
-# 4. 把 dropins 里的全部中文 jar 注册进默认配置的 bundles.info。
+# ---------- 8. 把 dropins 里的全部中文 jar 注册进默认配置的 bundles.info ----------
 #    实测本产品的 p2 不接管 dropins（清单毫无变化），因此必须直接写进包清单；
 #    以备份为母本重建，天然幂等、不会重复追加。
 function Get-Headers([string]$jarPath) {
@@ -92,9 +141,9 @@ foreach ($jar in (Get-ChildItem $dstPlg -Filter '*.jar' | Sort-Object Name)) {
     $added++
 }
 [System.IO.File]::WriteAllLines($bi, $lines, (New-Object System.Text.UTF8Encoding $false))
-Write-Output "已注册中文包到 bundles.info：$added 个（基于备份母本重建，共 $($lines.Count) 行）"
+Write-Host "已注册中文包到 bundles.info：$added 个（基于备份母本重建，共 $($lines.Count) 行）"
 
-# 5. 在 stm32cubeide.ini 中启用 zh_CN。
+# ---------- 9. 在 stm32cubeide.ini 中启用 zh_CN ----------
 #    -nl 是启动器参数，必须在 -vmargs 之前；-Dosgi.nl 是 JVM 参数，放在 -vmargs 之后。
 #    同样以备份为母本重建，保证幂等。
 $srcLines = [System.IO.File]::ReadAllLines($iniBak, [System.Text.Encoding]::UTF8)
@@ -108,8 +157,14 @@ for ($i = 0; $i -lt $srcLines.Count; $i++) {
     if ($t -eq '-vmargs') { [void]$out.Add('-Dosgi.nl=zh_CN') }
 }
 [System.IO.File]::WriteAllLines($ini, $out, (New-Object System.Text.UTF8Encoding $false))
-Write-Output "已在启动配置加入：-nl zh_CN（-vmargs 前）、-Dosgi.nl=zh_CN（-vmargs 后）"
+Write-Host "已在启动配置加入：-nl zh_CN（-vmargs 前）、-Dosgi.nl=zh_CN（-vmargs 后）"
 
-Write-Output ''
-Write-Output "安装完成：片段包 $nFrag 个，Babel 条目 $nBabel 个，目标 $zhDir"
-Write-Output '请从桌面快捷方式启动 STM32CubeIDE 查看效果；如需还原，运行 工具\还原英文.cmd'
+Write-Host ''
+Write-Host "STM32CubeIDE 目录：$dir"
+Write-Host "[√] 安装完成：片段包 $nFrag 个，Babel 条目 $nBabel 个。" -ForegroundColor Green
+Write-Host '请从桌面快捷方式启动 STM32CubeIDE 查看效果；如需还原，双击仓库根目录的「一键还原英文.bat」。'
+
+if (-not $NoPause) {
+    Write-Host ''
+    Read-Host '安装完成，按回车键关闭窗口' | Out-Null
+}
